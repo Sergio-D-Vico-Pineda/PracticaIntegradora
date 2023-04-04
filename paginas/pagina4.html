@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Práctica Integradora</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../style.css'>
+    <link rel='icon' href="../imagenes/imagen.png">
+</head>
+
+<body id="form">
+    <!-- CABECERA  -->
+    <header>
+        <nav>
+            <div>
+                <a href="../index.html"> Inicio </a>
+            </div>
+            <div>
+                <a href="./pagina1.html">
+                    <img src="../imagenes/biglinux.webp" alt="Icono BigLinux" width="20">
+                    BigLinux
+                </a>
+            </div>
+            <div>
+                <a href="./pagina2.html">
+                    <img src="../imagenes/kdeneon.svg" alt="Icono KDE Neon" width="14">
+                    KDE Neon
+                </a>
+            </div>
+            <div>
+                <a href="./pagina3.html">
+                    <img src="../imagenes/deepin.svg" alt="Icono Deepin" width="14">
+                    Deepin
+                </a>
+            </div>
+            <div>
+                <a class="menuactivo">¿Quieres ayudar?</a>
+            </div>
+            <div>
+                <h1>Formulario para contribuir</h1>
+            </div>
+        </nav>
+    </header>
+    <!-- CONTENIDO -->
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>1.- Información personal</legend>
+                <br>
+                <label for="nom">Nombre y Apellidos: </label>
+                <input type="text" name="nom" id="nom">
+                <br>
+                <label for="nick">Nombre de usuario: </label>
+                <input type="text" name="nick" id="nick" size="15" minlength="5" maxlength="20">
+                <br>
+                <label for="pass">Contraseña: </label>
+                <input type="password" name="pass" id="pass" size="10" minlength="8" maxlength="30">
+                <br>
+                <label for="correo">Correo eletrónico: </label>
+                <input type="email" name="correo" id="correo" maxlength="30">
+            </fieldset>
+            <fieldset>
+                <legend>2.- Datos importantes</legend>
+                <p> ¿Que se te da bien? </p>
+                <hr><br>
+                <div class="divtextarea">
+                    <label for="comentarios">Comentarios</label>
+                    <br>
+                    <textarea style="resize: none ;" name="comentarios" id="comentarios" cols="20" rows="5"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="skills" id="front">
+                    <label for="front">Front-End</label>
+                    <br>
+                    <input type="checkbox" name="skills" id="back">
+                    <label for="back">Back-End</label>
+                    <br>
+                    <input type="checkbox" name="skills" id="bases">
+                    <label for="bases">Bases de datos</label>
+                    <br>
+                    <input type="checkbox" name="skills" id="reponsive">
+                    <label for="reponsive">Diseño reponsive</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>3.- Distribución</legend>
+                <p> Distribución a elegir para ayudar </p>
+                <hr><br>
+                <div class="divselect">
+                    <select name="dist" id="dist">
+                        <option value="" class="option-hidden" selected> Elige una opción</option>
+                        <option value="BigLinux">BigLinux</option>
+                        <option value="KDEneon">KDE Neon</option>
+                        <option value="Deepin">Deepin</option>
+                    </select>
+                </div>
+                <br>
+                <div class="divradio">
+                    <span>
+                        <input type="radio" name="version" id="Stable">
+                        <label for="Stable">Estable</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="version" id="Beta">
+                        <label for="Beta">Beta</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="version" id="Alpha">
+                        <label for="Alpha">Alfa</label>
+                    </span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>4. Tiempo a dedicar</legend>
+                <p> Por la ...</p>
+                <hr><br>
+                <div class="turno">
+                    <input type="checkbox" name="turno" id="turno1"><label for="turno1">Mañana</label>
+                    <input type="checkbox" name="turno" id="turno2"><label for="turno2">Tarde</label>
+                </div>
+                <div class="divhoras">
+                    <div>
+                        <input type="radio" name="horas" id="horas1"><label for="horas1">De 0 a 1 hora al día</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="horas" id="horas2"><label for="horas2">De 1 a 2 horas al día</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="horas" id="horas3"><label for="horas3">De 2 a 3 horas al día</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="horas" id="horas4"><label for="horas4">De 3 a 4 horas al día</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="horas" id="horas5"><label for="horas5">Más de 4 horas al día</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="divbutton">
+                <div class="divpreguntas">
+                    <div class="divpreg1">
+                        <p>¿Aceptas que se envie esta información?</p>
+                        <br>
+                        <span>
+                            <input type="radio" name="terminos" id="si">
+                            <label for="si">Acepto</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="terminos" id="no" checked>
+                            <label for="no">No acepto</label>
+                        </span>
+                    </div>
+                    <br>
+                    <div class="divpreg2">
+                        <p>¿Qué te parece esta página?</p>
+                        <br>
+                        <select name="valoracion" id="valoracion">
+                            <option value="1">1 estrella</option>
+                            <option value="2">2 estrellas</option>
+                            <option value="3">3 estrellas</option>
+                            <option value="4">4 estrellas</option>
+                            <option value="5" selected>5 estrellas</option>
+                            <option value="6">6 estrellas</option>
+                            <option value="7">7 estrellas</option>
+                            <option value="8">8 estrellas</option>
+                            <option value="9">9 estrellas</option>
+                            <option value="10">10 estrellas</option>
+                        </select>
+                    </div>
+                </div>
+                <hr><br>
+                <input type="submit" value="Enviar datos">
+                <input type="reset" value="Borrar datos">
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
